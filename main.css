@@ -1,0 +1,80 @@
+body{
+  box-sizing: border-box;
+}
+
+.container{
+  text-align: center;
+  padding: 15px;
+  width: 80%;
+  max-width: 250px;
+  display: block;
+  background: green;
+  font-family: Helvetica;
+  border-radius: 15px;
+  margin: 70px auto;
+  box-shadow: 3px 3px 15px #000;
+}
+.container h2{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.buttons-wrapper{
+  width: 88%;
+  margin: 0 auto;
+}
+
+.container #screen{
+  display: block;
+  margin: 0 auto 10px;
+  width: 200px;
+  font-size: 30px;
+  border-radius: 5px;
+  text-align: center;
+  border: solid 3px lime;
+}
+
+.buttons .button{
+  display: inline;
+}
+
+.buttons button{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background: #e5e5e5;
+  outline: none;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  box-shadow: 1px 1px 5px #000;
+}
+.buttons button:hover,.buttons .buttonC #c:hover{
+  background: lime;
+}
+
+
+.buttons .buttonC #c{
+  width: 203px;
+  height: 60px;
+  margin: 5px;
+  background: #e5e5e5;
+  outline: none;
+}
+
+@media screen and (max-height: 500px) {
+  .container{
+    margin: 10px auto;
+  }
+  .container h2{
+    display: none;
+  }
+  .buttons button{
+    height: 33px;
+  }
+  .buttons .buttonC #c{
+    height: 34px;
+  }
+}
